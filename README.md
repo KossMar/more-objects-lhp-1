@@ -19,8 +19,12 @@ int main(int argc, const char * argv[]) {
         formatter2.dateFormat = @"yyyy-MM-dd";
         NSDate *date = [formatter2 dateFromString:@"1992-12-09"];
         NSLog(@"%@", date);
+   
         
-        //NSLog(@"%@", formatter);
+        // getting my age in seconds
+        
+        NSTimeInterval myAgeSeconds = [date timeIntervalSinceNow];
+        NSLog(@"%f", myAgeSeconds);
     
         
     }
